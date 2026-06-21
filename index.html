@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Image resize</title>
+  <meta charset="UTF-8">
+  <title>Pro Bulk Image Resizer</title>
+
+  <link rel="stylesheet" href="image resize.css">
+
+  <!-- JSZip library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 </head>
+
 <body>
-  <h1>Hello People </h1>
+
+<div class="container">
+
+  <h1>🚀 Pro Bulk Image Resizer</h1>
+
+  <div class="card">
+
+    <input type="file" id="upload" multiple accept="image/*">
+    <br>
+
+    <input type="number" id="width" placeholder="Width (px)">
+    <input type="number" id="height" placeholder="Height (px)">
+    <br>
+
+    <button class="btn-blue" onclick="resizeAll()">Resize Images</button>
+    <button class="btn-green" onclick="downloadZip()">Download ZIP</button>
+
+  </div>
+
+  <div class="preview" id="preview"></div>
+
+</div>
+
+<script src="image resize.js"></script>
+
 </body>
 </html>
